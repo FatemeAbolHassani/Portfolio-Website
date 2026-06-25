@@ -1,318 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script data-goatcounter="https://fatila.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Fatemeh Mirzaabolhassani | Computational Biology Portfolio</title>
+    <meta
+      name="description"
+      content="Computational biology portfolio of Fatemeh Mirzaabolhassani, focused on cell-state transitions, single-cell biomedical data, gene regulatory network inference, CNV-aware analysis, and reproducible pipelines."
+    />
+    <link rel="canonical" href="https://fatemeabolhassani.github.io/Portfolio-Website/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Fatemeh Mirzaabolhassani | Computational Biology Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Computational biology portfolio focused on cell-state transitions, single-cell and high-dimensional biomedical data, regulatory mechanisms, and reproducible research workflows."
+    />
+    <meta property="og:url" content="https://fatemeabolhassani.github.io/Portfolio-Website/" />
+    <script
+      data-goatcounter="https://fatila.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Fateme Abolhassani</div>
-      <div>
-        <ul class="nav-links">
+    <noscript>
+      <img
+        src="https://fatila.goatcounter.com/count?p=/Portfolio-Website/"
+        alt=""
+        aria-hidden="true"
+        class="goatcounter-pixel"
+      />
+    </noscript>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-logo" href="#top" aria-label="Fatemeh Mirzaabolhassani homepage">
+          <span>Fatemeh</span>
+          <span>Mirzaabolhassani</span>
+        </a>
+
+        <ul class="nav-links" id="desktop-menu">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#focus">Research</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">CV / Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Fateme Abolhassani</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="Fateme Abolhassani profile picture"/>
 
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Fateme Abolhassani</h1>
-        <p class="section__text__p2">Computational biologist</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/FatemeMirzaAbolhassani_CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/fateme-abolhassani-59b557208/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/FatemeAbolHassani'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container"  style="gap:0.5rem;">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-             <p><strong>2+ years</strong><br>Research &amp; Mentoring</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-            <h3>Education</h3>
-
-            <p><strong>M.Sc., Computer Science</p>
-            <p><strong>B.Sc., Computer Science</p>
-
-
-            </div>
-          </div>
-          <div class="text-container">
-            <p>Code, cells &amp; color palettes: data to discovery, canvas to color.
-            I’m a CS-powered computational biologist building single-cell pipelines and
-            GRN models—and I occasionally set up molecular-dynamics dates between doxorubicin and DNA. 
-            I turn messy datasets into clean, testable stories and containerize everything so Future-Me says thanks.
-             I lean on creativity for study design, pipeline architecture, and visual storytelling.</p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <!-- Column 1: Bioinformatics -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">From Cells to Structures</h2>
-            <div class="article-container">
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Monocle3</h3><p>Experienced</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>CellOracle</h3><p>Experienced</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>TradeSeq</h3><p>Experienced</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>InferCNV</h3><p>Intermediate</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Docking</h3><p>Intermediate</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>GROMACS</h3><p>Basic</p></div>
-              </article>
-
-            </div>
-          </div>
-          <!-- Column 2: CS side -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">From Code to Clusters</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Python</h3><p>Experienced</p></div>
-              </article>
-
-               <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>R</h3><p>Intermediate</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>ML &amp; Viz</h3><p>Intermediate</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Transformers</h3><p>Basic</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Stats</h3><p>Intermediate</p></div>
-              </article>
-
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div><h3>Containers</h3><p>Experienced</p></div>
-              </article>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-
-      <div class="experience-details-container">
-        <!-- allow wrapping only here -->
-        <div class="about-containers" style="flex-wrap:wrap">
-
-          <!-- 💊🧬 Doxorubicin–DNA -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/project-1.png" alt="Doxorubicin–DNA project cover" class="project-img"/>
-            </div>
-            <h2 class="experience-sub-title project-title">Doxorubicin–DNA</h2>
-            <p class="project-tags">Dock→MD→Insight</p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn"
-                      onclick="location.href='https://github.com/ilyaravand/Doxorubicin-DNA'">
-                GitHub
-              </button>
-
-            </div>
-          </div>
-
-       
-     <div class="details-container color-container">
-      <div class="article-container">
-        <img src="./assets/project-2.jpg" alt="Single-cell ordering project cover" class="project-img"/>
-      </div>
-      <h2 class="experience-sub-title project-title">Single-Cell Ordering</h2>
-      <p class="project-tags">Mut×Traj→Fates</p>
-      <div class="btn-container">
-        <!-- TODO: replace with your single-cell repo link -->
-        <button class="btn btn-color-2 project-btn"
-                onclick="window.open('./assets/Glioblastoma_Poster.pdf','_blank')">
-          Poster
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          onclick="toggleMenu()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
-        <button class="btn btn-color-2 project-btn"
-                onclick="location.href='https://icb13.znu.ac.ir/Areas/Panel/Hamayesh/1/Files/booklet_(1).pdf'">
-          Abstract (P. 140)
-        </button>
-         <button class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/sobhanAhmadian/single_cell_ordering'">
-          GitHub
-        </button>
-      </div>
-    </div>
-
-
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:ilyaravand@gmail.com">fateme.abolhassani91@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/fateme-abolhassani-59b557208/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
       </nav>
-      <p>Copyright &#169; 2025 Fateme Abolhassani. All Rights Reserved.</p>
+
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#focus" onclick="toggleMenu()">Research</a>
+        <a href="#projects" onclick="toggleMenu()">Projects</a>
+        <a href="#skills" onclick="toggleMenu()">Skills</a>
+        <a href="#timeline" onclick="toggleMenu()">Timeline</a>
+        <a href="#contact" onclick="toggleMenu()">CV / Contact</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band" aria-labelledby="hero-title">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Computational biology and bioinformatics</p>
+            <h1 id="hero-title">Mapping cell-state transitions with computational biology</h1>
+            <p class="hero-lede">
+              I build computational workflows to study how cells change identity, diverge
+              into subpopulations, and acquire regulatory programs in disease progression.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#projects" aria-label="View featured research projects">
+                View projects
+              </a>
+              <a
+                class="button button-secondary"
+                href="assets/cv/Fateme_MirzaAbolhassani_CV.pdf"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open Fatemeh Mirzaabolhassani CV PDF"
+                data-goatcounter-click="cv-download"
+                data-goatcounter-title="CV download"
+              >
+                Open CV
+              </a>
+            </div>
+            <ul class="research-badges" aria-label="Research themes">
+              <li>Cell-state transitions</li>
+              <li>Single-cell omics</li>
+              <li>Regulatory genomics</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Profile and research summary">
+            <img
+              src="assets/images/profile-pic2.png"
+              alt="Portrait of Fatemeh Mirzaabolhassani"
+              class="profile-image"
+            />
+            <div class="hero-stat-panel">
+              <p class="stat-label">Current focus</p>
+              <p class="stat-value">Cell-state transitions in disease progression</p>
+              <p class="stat-note">
+                Normal thyroid epithelial states to PTC and ATC transition.
+              </p>
+            </div>
+          </div>
+
+          <p class="hero-intro">
+            Cells do not change identity all at once. They pass through intermediate
+            states, accumulate regulatory changes, and diverge into distinct
+            subpopulations. My work focuses on this transitional space, using
+            single-cell transcriptomics, trajectory inference, gene regulatory network
+            reconstruction, CNV-aware analysis, and multi-omics reasoning to turn
+            complex biological data into mechanistically meaningful hypotheses.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-band" id="about" aria-labelledby="about-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">Computational methods for biological state change</h2>
+          </div>
+          <div class="prose-stack">
+            <p>
+              I am a computational biology and bioinformatics researcher with a
+              background in Computer Science and Mathematics. My research focuses on
+              cell-state transitions in complex biological systems, especially how
+              cellular identities shift during disease progression.
+            </p>
+            <p>
+              I use trajectory inference, gene regulatory network reconstruction,
+              CNV-aware interpretation, and multi-omics integration not as endpoints,
+              but as tools to ask a deeper question: what regulatory logic drives a
+              cell to abandon one state and commit to another?
+            </p>
+            <p>
+              My strongest current work is in cancer single-cell genomics. In a human
+              thyroid cancer project, I lead computational analyses of single-cell
+              transcriptomic data to study the transition from normal thyroid epithelial
+              states to papillary thyroid carcinoma and anaplastic thyroid carcinoma.
+            </p>
+            <p>
+              I build reproducible workflows that connect high-dimensional data analysis
+              with biological interpretation and experimentally testable hypotheses.
+            </p>
+            <p>
+              Beyond cancer, I am interested in computational biology problems involving
+              single-cell and spatial omics, systems biology, regulatory genomics,
+              biomedical machine learning, perturbation modeling, and high-dimensional
+              biological data analysis.
+            </p>
+            <div class="about-points" aria-label="About summary">
+              <p>
+                <strong>Core question:</strong> what regulatory logic drives a cell to
+                abandon one state and commit to another?
+              </p>
+              <p>
+                <strong>Current evidence:</strong> cancer single-cell genomics, especially
+                thyroid cancer progression and glioblastoma.
+              </p>
+              <p>
+                <strong>Next step:</strong> PhD opportunities where rigorous computational
+                methods can answer ambitious biological questions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band section-muted" id="focus" aria-labelledby="focus-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Research focus</p>
+            <h2 id="focus-title">Questions and methods that connect the portfolio</h2>
+            <p>
+              The portfolio is organized around dynamic biological systems, regulatory
+              interpretation, and rigorous computational workflows.
+            </p>
+          </div>
+
+          <div class="focus-grid">
+            <article class="focus-card">
+              <span>01</span>
+              <h3>Cell-state transitions</h3>
+            </article>
+            <article class="focus-card">
+              <span>02</span>
+              <h3>Single-cell and spatial omics</h3>
+            </article>
+            <article class="focus-card">
+              <span>03</span>
+              <h3>Gene regulatory network inference</h3>
+            </article>
+            <article class="focus-card">
+              <span>04</span>
+              <h3>CNV-aware disease analysis</h3>
+            </article>
+            <article class="focus-card">
+              <span>05</span>
+              <h3>Cancer progression and tumor heterogeneity</h3>
+            </article>
+            <article class="focus-card">
+              <span>06</span>
+              <h3>Machine learning and statistics for biomedical data</h3>
+            </article>
+            <article class="focus-card">
+              <span>07</span>
+              <h3>Molecular modeling and drug-DNA interactions</h3>
+            </article>
+            <article class="focus-card">
+              <span>08</span>
+              <h3>Reproducible computational pipelines</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Featured projects</p>
+            <h2 id="projects-title">Evidence across scales of computational biology</h2>
+            <p>
+              Cancer genomics is the strongest current application area, supported by
+              broader work in molecular modeling and algorithmic biology.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured" id="thyroid-project">
+              <div class="pipeline-visual" aria-label="Thyroid cancer single-cell analysis pipeline">
+                <svg viewBox="0 0 760 260" role="img" aria-labelledby="thyroid-pipeline-title">
+                  <title id="thyroid-pipeline-title">
+                    Pipeline from single-cell RNA sequencing to candidate regulatory drivers
+                  </title>
+                  <defs>
+                    <marker
+                      id="arrowhead"
+                      markerWidth="10"
+                      markerHeight="10"
+                      refX="8"
+                      refY="5"
+                      orient="auto"
+                    >
+                      <path d="M0,0 L10,5 L0,10 Z"></path>
+                    </marker>
+                  </defs>
+                  <path class="pipeline-path" d="M70 80 H690 M690 80 V180 H70"></path>
+                  <g class="pipeline-node" transform="translate(34 48)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">scRNA</text>
+                    <text x="36" y="44">seq</text>
+                  </g>
+                  <g class="pipeline-node" transform="translate(158 48)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">QC</text>
+                    <text x="36" y="44">annot.</text>
+                  </g>
+                  <g class="pipeline-node" transform="translate(282 48)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">traj.</text>
+                    <text x="36" y="44">infer.</text>
+                  </g>
+                  <g class="pipeline-node" transform="translate(406 48)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">dynamic</text>
+                    <text x="36" y="44">genes</text>
+                  </g>
+                  <g class="pipeline-node" transform="translate(530 48)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">GRN</text>
+                    <text x="36" y="44">infer.</text>
+                  </g>
+                  <g class="pipeline-node" transform="translate(654 48)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">CNV</text>
+                    <text x="36" y="44">aware</text>
+                  </g>
+                  <g class="pipeline-node pipeline-node-final" transform="translate(34 148)">
+                    <circle cx="36" cy="32" r="32"></circle>
+                    <text x="36" y="28">driver</text>
+                    <text x="36" y="44">candidates</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Single-cell cancer genomics</p>
+                <h3 id="thyroid-project-summary">
+                  Integrative Single-Cell Transcriptomics in Thyroid Cancer Dedifferentiation
+                </h3>
+                <p>
+                  Computational analysis of single-cell transcriptomic data to study the
+                  transition from normal thyroid epithelial states to papillary thyroid
+                  carcinoma and anaplastic thyroid carcinoma.
+                </p>
+                <p class="project-status">
+                  Manuscript in preparation; computational candidates under experimental
+                  validation.
+                </p>
+                <p class="pipeline-copy">
+                  Pipeline: scRNA-seq to QC and annotation to trajectory inference to
+                  dynamic gene expression to GRN inference to CNV-aware interpretation
+                  to candidate regulatory drivers.
+                </p>
+                <ul class="tag-list">
+                  <li>Seurat</li>
+                  <li>Monocle3</li>
+                  <li>TradeSeq</li>
+                  <li>pySCENIC</li>
+                  <li>CellOracle</li>
+                  <li>CopyKAT</li>
+                  <li>InferCNV</li>
+                </ul>
+                <a
+                  class="text-link project-summary-link"
+                  href="#thyroid-project-summary"
+                  aria-label="Read thyroid project summary"
+                >
+                  Read project summary
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/images/gbm-pseudotime.jpg"
+                alt="Glioblastoma project visual showing pseudotime and phylogenetic analysis workflow"
+                class="project-image"
+              />
+              <div class="project-content">
+                <p class="project-kicker">Tumor evolution</p>
+                <h3>Driver Gene Identification in Glioblastoma Using Pseudotime and Phylogenetic Analysis</h3>
+                <p>
+                  Experience with tumor evolution, pseudotime analysis, mutation-informed
+                  reasoning, and integrative computational modeling.
+                </p>
+                <p class="project-status">M.Sc. thesis; poster and oral presentation.</p>
+                <ul class="tag-list">
+                  <li>Single-cell RNA-seq</li>
+                  <li>Monocle</li>
+                  <li>Phylogenetic analysis</li>
+                  <li>R</li>
+                  <li>Python</li>
+                </ul>
+                <a
+                  class="text-link"
+                  href="assets/poster/GBM_poster.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open glioblastoma poster PDF"
+                  data-goatcounter-click="gbm-poster"
+                  data-goatcounter-title="GBM poster"
+                >
+                  Open poster
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="assets/images/doxorubicin-dna.png"
+                alt="Molecular visualization of doxorubicin bound to DNA"
+                class="project-image"
+              />
+              <div class="project-content">
+                <p class="project-kicker">Molecular modeling</p>
+                <h3>Molecular Dynamics Simulation of Doxorubicin Binding to DNA and Topoisomerase II</h3>
+                <p>
+                  A mechanistic-scale project showing computational work beyond
+                  transcriptomics through docking, molecular dynamics, and trajectory
+                  analysis.
+                </p>
+                <p class="project-status">Ongoing collaboration.</p>
+                <ul class="tag-list">
+                  <li>GROMACS</li>
+                  <li>Amber</li>
+                  <li>AutoDock Vina</li>
+                  <li>PyMOL</li>
+                  <li>Trajectory analysis</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="algorithm-visual" aria-label="Static algorithmic RNA structure visual">
+                <code>RNA -> grammar -> structure</code>
+                <div class="rna-lines" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <div class="project-content">
+                <p class="project-kicker">Algorithmic biology</p>
+                <h3>RNA Secondary Structure Prediction</h3>
+                <p>
+                  Algorithmic and computational foundations from Computer Science, using
+                  stochastic context-free grammars and evolutionary modeling.
+                </p>
+                <p class="project-status">Implementation project; GitHub repository available.</p>
+                <ul class="tag-list">
+                  <li>Python</li>
+                  <li>Algorithms</li>
+                  <li>RNA structure prediction</li>
+                  <li>Evolutionary modeling</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band section-muted" id="skills" aria-labelledby="skills-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">Computational toolkit</h2>
+            <p>
+              Tools and methods I use to move from raw biological data to
+              interpretable hypotheses.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Single-cell and bioinformatics</h3>
+              <p>
+                Seurat, Monocle3, SoupX, Harmony, pySCENIC, CellOracle, TradeSeq,
+                SCPA, InferCNV, CopyKAT, Galaxy, Cytoscape, BioRender.
+              </p>
+            </article>
+            <article class="skill-card">
+              <h3>Programming and reproducibility</h3>
+              <p>
+                Python, R, Bash, Git/GitHub, Docker, conda, renv, and pipeline
+                development.
+              </p>
+            </article>
+            <article class="skill-card">
+              <h3>Machine learning and statistics</h3>
+              <p>
+                Machine learning pipelines, statistical testing, scikit-learn, and
+                PyTorch.
+              </p>
+            </article>
+            <article class="skill-card">
+              <h3>Molecular modeling</h3>
+              <p>
+                GROMACS, Amber, AutoDock Vina, trajectory analysis, PyMOL, molecular
+                docking, and molecular dynamics.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2 id="timeline-title">Research and training path</h2>
+            <p class="section-note">
+              A concise view of CV-supported milestones relevant to computational biology
+              and PhD applications.
+            </p>
+          </div>
+
+          <ol class="timeline-list">
+            <li>
+              <time>2016-2020</time>
+              <h3>B.Sc. in Computer Science</h3>
+              <p>Alzahra University, Tehran, Iran.</p>
+            </li>
+            <li>
+              <time>2020-2023</time>
+              <h3>M.Sc. in Computer Science</h3>
+              <p>Sharif University, Tehran, Iran.</p>
+            </li>
+            <li>
+              <time>2022-present</time>
+              <h3>Glioblastoma driver gene project</h3>
+              <p>
+                Single-cell gene expression, pseudotime, and phylogenetic analysis;
+                M.Sc. thesis basis.
+              </p>
+            </li>
+            <li>
+              <time>Feb-May 2024</time>
+              <h3>RNA secondary structure prediction</h3>
+              <p>Implementation project based on stochastic context-free grammars.</p>
+            </li>
+            <li>
+              <time>Sep 2024-present</time>
+              <h3>Thyroid cancer single-cell genomics</h3>
+              <p>
+                Lead bioinformatics analyses for dedifferentiation from normal thyroid
+                epithelial states to PTC and ATC.
+              </p>
+            </li>
+            <li>
+              <time>2025-present</time>
+              <h3>Molecular dynamics collaboration</h3>
+              <p>Doxorubicin binding to DNA and Topoisomerase II.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-band contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="eyebrow">CV / Contact</p>
+            <h2 id="contact-title">Open to PhD opportunities in computational biology</h2>
+            <p>
+              I am looking for PhD opportunities where rigorous computational methods can
+              help answer ambitious biological questions.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a
+              class="button button-primary"
+              href="assets/cv/Fateme_MirzaAbolhassani_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Fatemeh Mirzaabolhassani CV PDF"
+              data-goatcounter-click="cv-download"
+              data-goatcounter-title="CV download"
+            >
+              Open CV
+            </a>
+            <a
+              class="contact-link"
+              href="mailto:Fateme.AbolHassani91@gmail.com"
+              aria-label="Email Fatemeh Mirzaabolhassani"
+              data-goatcounter-click="email-contact"
+              data-goatcounter-title="Email contact"
+            >
+              <img src="assets/icons/email.png" alt="" aria-hidden="true" />
+              <span>Fateme.AbolHassani91@gmail.com</span>
+            </a>
+            <a
+              class="contact-link"
+              href="https://github.com/FatemeAbolHassani"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Fatemeh Mirzaabolhassani GitHub profile"
+              data-goatcounter-click="github-profile"
+              data-goatcounter-title="GitHub profile"
+            >
+              <img src="assets/icons/github.png" alt="" aria-hidden="true" />
+              <span>GitHub</span>
+            </a>
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/fateme-abolhassani-59b557208/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Fatemeh Mirzaabolhassani LinkedIn profile"
+              data-goatcounter-click="linkedin-profile"
+              data-goatcounter-title="LinkedIn profile"
+            >
+              <img src="assets/icons/linkedin.png" alt="" aria-hidden="true" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p>
+          Fatemeh Mirzaabolhassani - computational biology, cell-state transitions,
+          and high-dimensional biomedical data.
+        </p>
+        <a href="#top" aria-label="Back to top of page">Back to top</a>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

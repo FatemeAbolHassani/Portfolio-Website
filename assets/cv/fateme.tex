@@ -1,0 +1,288 @@
+\documentclass[11pt,a4paper,ragged2e]{altacv}
+\geometry{left=1.4cm,right=1.4cm,top=1.4
+cm,bottom=2.4
+cm,footskip = 0.5
+cm}
+
+\ifxetexorluatex
+
+  \setmainfont{Carlito}
+
+\else
+
+  \usepackage[utf8]{inputenc}
+
+  \usepackage[T1]{fontenc}
+
+  \usepackage[default]{lato}
+
+\fi
+
+\definecolor{purple}{HTML}{4127AA}
+
+\definecolor{purpleDaffodi}{HTML}{90AA27}
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+
+\definecolor{black}{HTML}{000000}
+
+\colorlet{heading}{purple}
+
+\colorlet{accent}{purple}
+
+\colorlet{emphasis}{SlateGrey}
+
+\colorlet{cdate}{purpleDaffodi}
+
+\colorlet{body}{LightGrey}
+
+\definecolor{text}{HTML}{532F67}
+
+\renewcommand{\itemmarker}{{\smallm\textbullet}}
+
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+
+\newcommand{\inlineitemes}[2]{%
+  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\color{cdate}\textbullet\hspace{0.5em}\color{body}{#1}}}}%
+  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][l]{\color{cdate}\textbullet\hspace{0.5em}\color{body}{#2}}}}\par
+  }
+
+
+\setbool{acvSectionColorHighlight}{true}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\makeatletter
+
+\patchcmd{\@sectioncolor}{\color}{\mdseries\fcolorbox}{}{}
+
+\makeatother
+
+\begin{document}
+
+\name{Fatemeh MirzaAbolhassani}
+
+\tagline{Computer Science}
+
+\personalinfo{
+\mailaddress{\href{mailto:Fateme.AbolHassani91@gmail.com}{\color{body}{Mail}}}
+ \phone{+98 9120224129}
+\location{Tehran, Iran}
+\github{\href{https://github.com/FatemeAbolHassani}{\color{body}{Github}}}
+ \linkedin{\href{https://www.linkedin.com/in/fateme-abolhassani-59b557208/}{\color{body}{Fateme Abolhassani}}}
+ \homepage{\href{https://fatemeabolhassani.github.io/Portfolio-Website/}{\color{body}{Portfolio}}}
+}
+\makecvheader
+
+
+
+\AtBeginEnvironment{itemize}{\small}
+
+
+
+\cvsection{\Large{Fields of Interest}}
+\inlineitemes{Tumor-Immune Microenvironment Analysis}{Cancer Cell-State Transitions \& Tumor Heterogeneity}
+\inlineitemes{Single-Cell \& Spatial Transcriptomics}{Cancer Genomics \& Clonal Evolution}
+\inlineitemes{Gene Regulatory Network Inference}{Multi-Omics Integration for Precision Oncology}
+
+\cvsection{\Large{Education}}
+
+\cvevent{}{Master of Computer Science}{Oct. 2020 -- Sept. 2023}{Sharif University, Tehran, Iran}{}
+
+\inlineitemes{GPA: 17.80/20 with total 32 passed credits}{Class Rank: Third}
+
+
+\cvevent{}{Bachelor of Computer Science}{Sept. 2016 -- Sept. 2020}{Alzahra University, Tehran, Iran}{}
+\inlineitemes{GPA: 19.44/20 with total 136 passed credits}{Class Rank: First}
+
+\cvevent{}{Mathematics and Physics High School Diploma}{Sept. 2012 -- Aug. 2016}{Farzanegan High School, Tehran, Iran }{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item GPA: 18.98/20
+\end{itemize}
+
+\cvsection{\Large{Skills}}
+
+\textbf{Programming \& Scripting:} Python, R, Bash, Git/GitHub. \\[2pt]
+\textbf{Single-cell \& Bioinformatics tools:} Seurat, Monocle3, SoupX, Harmony, pySCENIC, CellOracle, TradeSeq, SCPA, InferCNV, CopyKAT, Phylogenetics, Galaxy, Cytoscape, BioRender.\\[2pt]
+\textbf{Molecular modeling \& MD:} GROMACS, Amber, AutoDock Vina, trajectory analysis, PyMOL. \\[2pt]
+\textbf{Deep Learning \& Machine learning \& Statistics:} Machine learning pipelines, statistical testing, scikit-learn, PyTorch. \\[2pt]
+\textbf{HPC \& Reproducibility:}  Docker, conda, renv, pipeline development.
+
+
+% ─────────────────────────────────────────
+% MANUSCRIPTS IN PREPARATION
+% ─────────────────────────────────────────
+
+\cvsection{\Large{Manuscripts in Preparation}}
+
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item \textbf{Mirzaabolhassani F.}, et al. ``Integrative Single-Cell Transcriptomics to Identify Regulatory Drivers in the Dedifferentiation of Thyroid Cancer.'' \textit{Co-first author. Manuscript in preparation.}
+\end{itemize}
+
+
+% ─────────────────────────────────────────
+% RESEARCH EXPERIENCE
+% ─────────────────────────────────────────
+
+\cvsection{\Large{Research Experience}}
+
+\cvevent{}{Integrative Single-Cell Transcriptomics to Identify Regulatory Drivers in the Dedifferentiation of Thyroid Cancer}{Sep. 2024 -- present}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item \textbf{Role: Lead author for bioinformatics analyses} (co-first contribution; overall second author).
+    \item Integrated trajectory inference, GRN analysis (pySCENIC, CellOracle), and CNV inference (CopyKAT, InferCNV) to identify candidate transcription factors and genes driving the \textbf{Normal~\textrightarrow~PTC~\textrightarrow~ATC} transition; results under experimental validation with clinical collaborators at EMRI, Tehran University of Medical Sciences.
+    \item Supervisors: Dr. Kaveh Kavousi and Dr. Vahid Haghpanah
+\end{itemize}
+\newpage
+\cvevent{}{Identification of Driver Genes in Glioblastoma Based on Single-Cell Gene Expression Data Utilizing Pseudotime and Phylogenetic Analysis}{Oct. 2022 -- present}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item Developed a scoring framework integrating pseudotime-ordered expression dynamics with evolutionary distances inferred from mutation data, enabling prioritization of genes whose transcriptional changes are phylogenetically consistent with driver-level selection in GBM progression.
+    \item This work formed the basis of my M.Sc.\ thesis and is currently being extended with additional analyses.
+    \item Supervisors: Dr.\ Mohammad Hadi Foroughmand Araabi, Dr.\ Kaveh Kavousi, Dr.\ Fatemeh Zare-Mirakabad
+\end{itemize}
+
+
+\cvevent{}{Molecular Dynamics Simulation of Doxorubicin Binding to DNA and Topoisomerase II}{Jun. 2025 -- present}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item Building an MD workflow to simulate doxorubicin--DNA binding and stabilization of specific binding poses, in collaboration with biologists and computational physicists.
+    \item Supervisors: Dr.\ Arash Boochani and Dr.\ Fatemeh Zare-Mirakabad
+\end{itemize}
+
+\cvevent{}{Implementation of RNA Secondary Structure Prediction}{Feb. 2024 -- May 2024}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item Implemented methods from ``RNA Secondary Structure Prediction Using Stochastic Context-Free Grammars and Evolutionary History''; supervised a B.Sc.\ student. \href{https://github.com/Mr-Ahmadi/RNA-Secondary-Structure-Prediction}{\color{cdate}\faLink\ GitHub repository}
+    \item Supervisor: Dr.\ Fatemeh Zare-Mirakabad
+\end{itemize}
+
+
+\cvsection{\Large{Presentations}}
+
+\cvevent{}{Identification of Driver Genes in Glioblastoma Using Single-Cell Gene Expression, Pseudotime, and Phylogenetic Analysis}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item Poster presentation: Feb. 2025, Iran Conference on Bioinformatics, Zanjan, Iran.
+      \href{https://icb13.znu.ac.ir/Areas/Panel/Hamayesh/1/Files/booklet_(1).pdf}{\color{cdate}\faLink\ Abstract (P.140)}  
+    \href{https://fatemeabolhassani.github.io/Portfolio-Website/assets/Glioblastoma_Poster.pdf}{\color{cdate}\faLink\ Poster}
+    \item Oral presentation: Apr. 2025, Computational Biology Research Center, Amirkabir University, Tehran, Iran.
+\end{itemize}
+\normalsize
+
+\cvsection{\Large{Work Experience}}
+\cvevent{}{Bioinformatics Research Collaborator}{Sep. 2024 -- present}
+{EMRI/TUMS, Shariati Hospital, Tehran, Iran}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+\item Provide computational analyses for a clinical scRNA-seq study on thyroid cancer progression, working directly with
+clinicians and experimental biologists to translate computational findings into experimentally testable hypotheses.
+\item Collaboration with the Endocrinology and Metabolism Research Institute, Tehran University of Medical Sciences.
+\end{itemize}
+
+\cvevent{}{Research Affiliations}{2022 -- present}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+   \item Computational Biology Research Center (CBRC), Amirkabir University of Technology (Polytechnic)
+    \item Complex Biological Systems and Bioinformatics (CBB), University of Tehran
+\end{itemize}
+
+\cvevent{}{Workshop Instructor}{Sep. 2024}{Institute Pasteur, Tehran, Iran}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item Conducted training on Next-Generation Sequencing techniques.
+\end{itemize}
+
+\cvevent{}{Teaching Assistant}{2018 -- 2023}{Sharif University, Amirkabir University, Alzahra University}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+\item Teaching assistant for Foundations of Computation Theory, Database, and Data Structures and Algorithms.
+\end{itemize}
+
+
+
+\cvsection{\Large{Languages}}
+\cvevent{}{English}{}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}] 
+    \item IELTS: 7 (2022 -- 2024), Next exam expected in July 2026
+\end{itemize}
+
+\cvsection{\Large{Honors}\faTrophy}
+
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+\Small
+    \item M.Sc. Fellowship Award at Amirkabir University of Technology, Tehran University, and Sharif University as an exceptionally talented student (exempt from entrance exam).
+    \item Ranked first in my B.Sc. class for three consecutive years.
+    \item Received governmental fellowships for outstanding Bachelor performance.
+    \item Admitted to NODET (National Organization for Development of Exceptional Talent) via competitive entrance exam for high school.
+\end{itemize}
+
+\cvsection{\Large{Leadership \& Extracurriculars}}
+
+\cvevent{}{Coach, ICPC (International Collegiate Programming Contest, Asia Region, Tehran site)}{2025}{}{}
+\begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+    \item Mentored and guided a competitive programming team, coordinating strategy, training, and problem-solving.
+\end{itemize}
+
+\cvevent{}{Co-founder, Computer Science Journal Club}{Winter 2018 -- Summer 2020}{}{}
+
+
+
+\cvsection{\Large{References}}
+
+\cvevent{\textbf{Dr. Kaveh Kavousi}}
+{\text{Associate Professor, Dept. of Bioinformatics, Institute of Biochemistry \& Biophysics, University of Tehran} \\
+\color{purpleDaffodi}\text{kkavousi@ut.ac.ir, kkavousi@gmail.com}}{}{}{}
+
+\cvevent{\textbf{Dr. Fatemeh Zare-Mirakabad}}
+{\text{Assistant Professor, Dept. of Mathematics \& Computer Science, Amirkabir University of Technology} \\
+\color{purpleDaffodi}\text{f.zare@aut.ac.ir}}{}{}{}
+
+\cvevent{\textbf{Dr. Vahid Haghpanah}}
+{\text{Associate Professor of Molecular Medicine, Endocrinology and Metabolism Research Center, Clinical Sciences Institute, Tehran University of Medical Sciences} \\
+\color{purpleDaffodi}\text{vhaghpanah@tums.ac.ir, v.haghpanah@gmail.com}}{}{}{}
+
+% \cvsection{\Large{Relevant Online links}}
+% \begin{itemize}[label=\textcolor{Babyblue}{\textbullet}]
+%     \item Github: https://github.com/FatemeAbolHassani/
+%     \item LinkedIn: https://www.linkedin.com/in/fateme-abolhassani-59b557208/
+%     \item Portfolio: https://fatemeabolhassani.github.io/Portfolio-Website/
+%     \item Gmail: Fateme.AbolHassani91@gmail.com
+%     \item Poster: https://fatemeabolhassani.github.io/Portfolio-Website/assets/Glioblastoma\_Poster.pdf
+% \end{itemize}
+
+% \newpage
+% \cvsection{\Large{cover letter}}
+% Dear Professor Wan,
+% \\[0.5 em]
+% \justifying {I am writing to apply for the PhD position in cell fate decisions and tissue formation in zebrafish at the Center for Integrative Genomics, University of Lausanne. I completed my M.Sc. in Computer Science with a specialization in Computational Science at Sharif University of Technology. My research has focused on computational biology and single-cell transcriptomics, and I want to bring that foundation into a setting where developmental dynamics can be observed and modeled directly.\\[0.5 em]What drew me most to your lab is the question driving the project: how do embryos build tissues reliably when individual cell behavior is variable? The answer seems to require holding together information that most approaches treat separately. The weMERFISH work makes this concrete, restoring gene expression to its spatial context reveals not just what cells express, but where they sit relative to each other within the developing tissue. Your earlier work reconstructing neural circuit emergence in a living zebrafish makes a complementary point: following cells through their lineage and movement, in real time, reveals the history that explains where they end up. What excites me about the direction you are building toward is the question of how molecular state, spatial position, lineage history, and cell behavior jointly constrain cell fate during tissue formation. Answering this question requires integrating spatial transcriptomics, live imaging, and computational modeling rather than using any one of them alone which excites me even further.\\[0.5 em]My work has been on dynamic cell populations in cancer, where the core challenge is similar but the tools are more indirect. For my main research project, I study the transition from normal thyroid epithelium through papillary to anaplastic thyroid carcinoma, integrating trajectory inference, pseudotime-ordered expression analysis, gene regulatory network inference, and CNV-aware clonal interpretation to identify transcription factors driving progression, with results now under experimental validation with collaborators at the Endocrinology and Metabolism Research Center, Tehran University of Medical Sciences. My M.Sc. thesis tackled a related problem in glioblastoma, combining pseudotime-ordered expression dynamics with phylogenetic distances inferred from somatic mutations to prioritize driver genes whose expression changes are consistent with evolutionary selection. Both projects trained me to model biological state transitions and connect computational findings to experimental questions, but both were working backward from snapshots. The Wan Lab works forward, and I want to develop in that direction.\\[0.5 em]My background in zebrafish and live imaging is limited, and I want to be straightforward about that. But the position you are describing is precisely where I want to build that experience, learning in toto imaging and spatial transcriptomics in a vertebrate developmental system, gaining hands-on exposure to experimental design in zebrafish, and developing into a researcher who can work across the full arc from experiment to computational interpretation. The interdisciplinary training your lab offers is not incidental to my interest; it is central to it. I would also find it meaningful to join at the founding stage of the lab at UNIL, where the lab's directions and methods are still being shaped. My computational depth in Python and R, experience building and integrating multi-layer single-cell analyses, and track record collaborating closely with experimental and clinical researchers are what I bring to that environment from the start. I would be glad to discuss whether my background is a good fit.\\[1 em]Sincerely,\\[0.1 em]Fateme Mirzaabolhassani}
+% \cvsection{\Large{list of publications}}
+% \cvevent{}{Manuscripts in Preparation}{}{}
+% \begin{itemize}[label=\textcolor{purple}{\textbullet}]
+% \item Integrative Single-Cell Transcriptomics to Identify Regulatory Drivers in the Dedifferentiation of Thyroid Cancer
+% \begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+%     \item Manuscript in preparation
+%     \item Role: Lead bioinformatics analyst; co-first contribution / overall second author
+%     \item Summary: This project studies the progression from normal thyroid epithelial states to papillary thyroid carcinoma and anaplastic thyroid carcinoma using single-cell RNA-seq data. The analysis integrates trajectory inference, pseudotime-based gene expression dynamics, CNV-aware interpretation, and gene regulatory network analysis to identify candidate transcription factors and regulatory programs associated with dedifferentiation and disease progression.
+% \end{itemize}
+
+% \item Identification of Driver Genes in Glioblastoma Based on Single-Cell Gene Expression Data Using Pseudotime and Phylogenetic Analysis
+% \begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+%     \item Manuscript in preparation; based on M.Sc. thesis
+%     \item Summary: This project investigates glioblastoma progression by combining mutation-related information, phylogenetic analysis, and Monocle-based pseudotime modeling. The aim is to compare evolutionary relationships among neoplastic tumor cells with transcriptional progression inferred from single-cell gene expression data.
+% \end{itemize}
+
+% \end{itemize}
+
+% \cvevent{}{Conference Presentations}{}{}
+%  \begin{itemize}[label=\textcolor{purple}{\textbullet}]
+%     \item Identification of Driver Genes in Glioblastoma Using Single-Cell Gene Expression, Pseudotime, and Phylogenetic Analysis
+%     \begin{itemize}[label=\textcolor{purpleDaffodi}{\textbullet}]
+%             \item Poster presentation: Feb. 2025, Iran Conference on Bioinformatics, Zanjan, Iran.
+%               \href{https://icb13.znu.ac.ir/Areas/Panel/Hamayesh/1/Files/booklet_(1).pdf}{\color{cdate}\faLink\ Abstract (P.140)}  
+%             \href{https://fatemeabolhassani.github.io/Portfolio-Website/assets/Glioblastoma_Poster.pdf}{\color{cdate}\faLink\ Poster}
+%             \item Oral presentation: Apr. 2025, Computational Biology Research Center, Amirkabir University, Tehran, Iran.
+%         \end{itemize}
+% \end{itemize}
+
+
+
+
+
+\end{document}
+
+
+
