@@ -40,4 +40,51 @@ function setupProjectFilters() {
   });
 }
 
+function setupScrollReveal() {
+  const revealTargets = document.querySelectorAll(
+    "main > .section-band, .project-card, .focus-card, .skill-card, .timeline-list > li, .detail-status-card, .detail-flow, .detail-pipeline, .collaboration-note"
+  );
+
+  if (!revealTargets.length) {
+    return;
+  }
+
+  document.documentElement.classList.add("reveal-enabled");
+  revealTargets.forEach((target) => target.classList.add("reveal-on-scroll"));
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    revealTargets.forEach((target) => target.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      rootMargin: "0px 0px -10% 0px",
+      threshold: 0.12,
+    }
+  );
+
+  revealTargets.forEach((target) => {
+    if (target.getBoundingClientRect().top < window.innerHeight * 0.95) {
+      target.classList.add("is-visible");
+      return;
+    }
+
+    observer.observe(target);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", setupProjectFilters);
+document.addEventListener("DOMContentLoaded", setupScrollReveal);
