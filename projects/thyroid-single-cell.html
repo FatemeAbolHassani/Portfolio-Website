@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thyroid Cancer Single-Cell Project | Fatemeh Mirzaabolhassani</title>
+    <meta
+      name="description"
+      content="Project summary for Fatemeh Mirzaabolhassani's integrative single-cell transcriptomics work on thyroid cancer dedifferentiation, trajectory inference, GRN analysis, and CNV-aware interpretation."
+    />
+    <link
+      rel="canonical"
+      href="https://fatemeabolhassani.github.io/Portfolio-Website/projects/thyroid-single-cell.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Integrative Single-Cell Transcriptomics in Thyroid Cancer Dedifferentiation"
+    />
+    <meta
+      property="og:description"
+      content="A static project summary covering the biological question, role, workflow, methods, and status of a thyroid cancer single-cell transcriptomics project."
+    />
+    <meta
+      property="og:url"
+      content="https://fatemeabolhassani.github.io/Portfolio-Website/projects/thyroid-single-cell.html"
+    />
+    <script
+      data-goatcounter="https://fatila.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+  </head>
+  <body>
+    <noscript>
+      <img
+        src="https://fatila.goatcounter.com/count?p=/Portfolio-Website/projects/thyroid-single-cell.html"
+        alt=""
+        aria-hidden="true"
+        class="goatcounter-pixel"
+      />
+    </noscript>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-logo" href="../index.html#top" aria-label="Fatemeh Mirzaabolhassani homepage">
+          <span>Fatemeh</span>
+          <span>Mirzaabolhassani</span>
+        </a>
+
+        <ul class="nav-links" id="desktop-menu">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#focus">Research</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#timeline">Timeline</a></li>
+          <li><a href="../index.html#contact">CV / Contact</a></li>
+        </ul>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          onclick="toggleMenu()"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <a href="../index.html#about" onclick="toggleMenu()">About</a>
+        <a href="../index.html#focus" onclick="toggleMenu()">Research</a>
+        <a href="../index.html#projects" onclick="toggleMenu()">Projects</a>
+        <a href="../index.html#skills" onclick="toggleMenu()">Skills</a>
+        <a href="../index.html#timeline" onclick="toggleMenu()">Timeline</a>
+        <a href="../index.html#contact" onclick="toggleMenu()">CV / Contact</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="project-detail-hero section-band" aria-labelledby="project-title">
+        <div class="section-inner project-detail-grid">
+          <div>
+            <p class="eyebrow">Project summary</p>
+            <h1 id="project-title">Integrative Single-Cell Transcriptomics in Thyroid Cancer Dedifferentiation</h1>
+            <p class="hero-lede">
+              This project studies how normal thyroid epithelial states transition
+              toward papillary thyroid carcinoma and anaplastic thyroid carcinoma using
+              single-cell transcriptomics, trajectory inference, gene regulatory network
+              analysis, and CNV-aware interpretation.
+            </p>
+            <div class="hero-actions" aria-label="Project page actions">
+              <a class="button button-primary" href="../index.html#projects" aria-label="Back to homepage projects section">
+                Back to homepage
+              </a>
+              <a
+                class="button button-secondary"
+                href="../assets/cv/Fateme_MirzaAbolhassani_CV.pdf"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Download Fatemeh Mirzaabolhassani CV PDF"
+                data-goatcounter-click="cv-download"
+                data-goatcounter-title="CV download"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
+
+          <aside class="detail-status-card" aria-label="Project status">
+            <p class="stat-label">Status</p>
+            <p class="stat-value">Manuscript in preparation</p>
+            <p class="stat-note">Computational candidates under experimental validation.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-band section-muted" aria-labelledby="question-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Biological question</p>
+            <h2 id="question-title">What changes as thyroid epithelial states move through disease progression?</h2>
+          </div>
+          <div class="detail-flow">
+            <p class="detail-flow-item">
+              <span>01</span>
+              The project asks which cell states, gene expression programs, and candidate
+              regulators are associated with the Normal to PTC to ATC transition.
+            </p>
+            <p class="detail-flow-item">
+              <span>02</span>
+              The goal is to use computational evidence to reason about transitional
+              cellular states and regulatory programs without treating any single method
+              as the endpoint.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" aria-labelledby="role-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">My role</p>
+            <h2 id="role-title">Lead computational and bioinformatics analysis</h2>
+          </div>
+          <div class="detail-flow detail-flow-role">
+            <p class="detail-flow-item">
+              <span>01</span>
+              <strong>Lead computational and bioinformatics analysis</strong>
+              I lead the computational and bioinformatics analysis, including
+              preprocessing, annotation, trajectory inference, dynamic gene expression
+              analysis, gene regulatory network inference, CNV-aware interpretation,
+              and candidate regulator prioritization.
+            </p>
+            <p class="detail-flow-item">
+              <span>02</span>
+              <strong>Integrating evidence into biologically meaningful hypotheses</strong>
+              <em>Connecting outputs into a coherent biological interpretation is a
+              central challenge.</em>
+              A major challenge in this project is not only running individual analyses,
+              but connecting their outputs into a coherent biological interpretation. I
+              integrate evidence from trajectory structure, dynamic gene expression,
+              regulatory network inference, and CNV-aware tumor analysis to distinguish
+              robust biological signals from method-specific noise. This step is
+              essential for prioritizing candidate genes and regulatory programs that
+              are not just statistically interesting, but biologically plausible and
+              suitable for experimental follow-up.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band section-muted" aria-labelledby="collaboration-title">
+        <div class="section-inner two-column">
+          <div>
+            <p class="eyebrow">Collaboration</p>
+            <h2 id="collaboration-title">Working closely with biological collaborators</h2>
+          </div>
+          <div class="collaboration-note prose-stack">
+            <p>
+              This project has involved continuous collaboration with biologists and
+              clinical collaborators. Frequent research discussions, including daily
+              meetings during active analysis phases, helped keep computational
+              decisions closely tied to the biological question rather than treating the
+              pipeline as a purely technical workflow.
+            </p>
+            <p>
+              These discussions helped me interpret single-cell results, distinguish
+              technical artifacts from biologically meaningful patterns, refine analysis
+              choices using experimental context, and prioritize candidate genes and
+              regulatory programs for experimental follow-up. This shaped how I approach
+              computational biology: as an iterative dialogue between biological insight,
+              statistical reasoning, and reproducible computational work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band section-muted" aria-labelledby="workflow-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Workflow / pipeline</p>
+            <h2 id="workflow-title">From raw single-cell data to candidate regulatory drivers</h2>
+          </div>
+
+          <div class="detail-pipeline" aria-label="Thyroid cancer single-cell workflow">
+            <ol>
+              <li>scRNA-seq data</li>
+              <li>QC, SoupX, DoubletFinder</li>
+              <li>Seurat / Harmony integration</li>
+              <li>epithelial cell annotation</li>
+              <li>Monocle3 trajectory inference</li>
+              <li>TradeSeq dynamic expression analysis</li>
+              <li>pySCENIC / CellOracle GRN inference</li>
+              <li>CopyKAT / InferCNV CNV-aware analysis</li>
+              <li>candidate regulatory drivers</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band" aria-labelledby="methods-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Methods and tools</p>
+            <h2 id="methods-title">Method groups used in the analysis</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Single-cell processing</h3>
+              <p>Seurat, SoupX, DoubletFinder, Harmony.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Trajectory and dynamics</h3>
+              <p>Monocle3, TradeSeq.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Regulatory analysis</h3>
+              <p>pySCENIC, CellOracle.</p>
+            </article>
+            <article class="skill-card">
+              <h3>CNV-aware interpretation</h3>
+              <p>CopyKAT, InferCNV.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Integration and visualization</h3>
+              <p>R, Python, Cytoscape.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band section-muted" aria-labelledby="demonstrates-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">What this project demonstrates</p>
+            <h2 id="demonstrates-title">Computational rigor connected to biological interpretation</h2>
+          </div>
+
+          <div class="focus-grid">
+            <article class="focus-card">
+              <span>01</span>
+              <h3>Ability to design reproducible single-cell analysis workflows</h3>
+            </article>
+            <article class="focus-card">
+              <span>02</span>
+              <h3>Ability to connect computational results to biological interpretation</h3>
+            </article>
+            <article class="focus-card">
+              <span>03</span>
+              <h3>Ability to integrate trajectory, GRN, and CNV evidence</h3>
+            </article>
+            <article class="focus-card">
+              <span>04</span>
+              <h3>Ability to work with experimental and clinical collaborators</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band contact-band" aria-labelledby="cta-title">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="eyebrow">Next</p>
+            <h2 id="cta-title">Continue exploring the portfolio</h2>
+            <p>
+              This project is part of a broader portfolio focused on cell-state
+              transitions, regulatory mechanisms, and high-dimensional biomedical data.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="../index.html#projects" aria-label="Back to homepage">
+              Back to homepage
+            </a>
+            <a
+              class="button button-secondary"
+              href="../assets/cv/Fateme_MirzaAbolhassani_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Download Fatemeh Mirzaabolhassani CV PDF"
+              data-goatcounter-click="cv-download"
+              data-goatcounter-title="CV download"
+            >
+              Download CV
+            </a>
+            <a
+              class="contact-link"
+              href="mailto:Fateme.AbolHassani91@gmail.com"
+              aria-label="Contact Fatemeh Mirzaabolhassani by email"
+              data-goatcounter-click="email-contact"
+              data-goatcounter-title="Email contact"
+            >
+              <img src="../assets/icons/email.png" alt="" aria-hidden="true" />
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p>
+          Fatemeh Mirzaabolhassani - computational biology, cell-state transitions,
+          and high-dimensional biomedical data.
+        </p>
+        <a href="#top" aria-label="Back to top of page">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

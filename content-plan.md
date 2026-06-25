@@ -53,7 +53,7 @@ Manuscript in preparation; computational candidates under experimental validatio
 This project shows experience with tumor evolution, pseudotime analysis, mutation-informed reasoning, and integrative computational modeling.
 
 Visual:
-Use gbm-pseudotime.jpg and/or GBM_poster.pdf.
+Use gbm-pseudotime.jpg and/or Glioblastoma_Poster.pdf.
 
 Tools:
 Single-cell RNA-seq, pseudotime analysis, Monocle, phylogenetic analysis, mutation-informed scoring, R, Python

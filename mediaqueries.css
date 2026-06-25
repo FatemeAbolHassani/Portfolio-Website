@@ -17,6 +17,7 @@
 
   .hero-grid,
   .two-column,
+  .project-detail-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -57,6 +58,10 @@
   }
 
   .hero {
+    padding-top: 72px;
+  }
+
+  .project-detail-hero {
     padding-top: 72px;
   }
 
@@ -128,6 +133,17 @@
 
   .timeline-list li {
     padding: 1rem 1rem 1rem 3.15rem;
+  }
+
+  .detail-pipeline ol {
+    grid-template-columns: 1fr;
+    min-width: 0;
+  }
+
+  .detail-pipeline li:not(:last-child)::after {
+    bottom: -1.05rem;
+    right: auto;
+    transform: rotate(90deg);
   }
 
   .footer-inner {

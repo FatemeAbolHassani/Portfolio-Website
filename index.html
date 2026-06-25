@@ -251,58 +251,53 @@
 
           <div class="project-grid">
             <article class="project-card project-card-featured" id="thyroid-project">
-              <div class="pipeline-visual" aria-label="Thyroid cancer single-cell analysis pipeline">
-                <svg viewBox="0 0 760 260" role="img" aria-labelledby="thyroid-pipeline-title">
+              <div class="pipeline-visual" aria-label="Thyroid cancer single-cell analysis tree">
+                <svg viewBox="0 0 760 300" role="img" aria-labelledby="thyroid-pipeline-title">
                   <title id="thyroid-pipeline-title">
-                    Pipeline from single-cell RNA sequencing to candidate regulatory drivers
+                    Tree from scRNA-seq data to trajectory inference, gene regulatory network inference, and CNV-aware interpretation, ending in candidate regulatory drivers
                   </title>
                   <defs>
                     <marker
-                      id="arrowhead"
+                      id="tree-arrowhead"
                       markerWidth="10"
                       markerHeight="10"
                       refX="8"
                       refY="5"
                       orient="auto"
                     >
-                      <path d="M0,0 L10,5 L0,10 Z"></path>
+                      <path d="M0,0 L10,5 L0,10 Z" fill="#0b6f68"></path>
                     </marker>
                   </defs>
-                  <path class="pipeline-path" d="M70 80 H690 M690 80 V180 H70"></path>
-                  <g class="pipeline-node" transform="translate(34 48)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">scRNA</text>
-                    <text x="36" y="44">seq</text>
+
+                  <path class="pipeline-tree-line" d="M170 150 C215 150 215 74 260 74"></path>
+                  <path class="pipeline-tree-line" d="M170 150 C215 150 215 150 260 150"></path>
+                  <path class="pipeline-tree-line" d="M170 150 C215 150 215 226 260 226"></path>
+                  <path class="pipeline-tree-line" d="M500 74 C540 74 540 150 590 150"></path>
+                  <path class="pipeline-tree-line" d="M500 150 C540 150 540 150 590 150"></path>
+                  <path class="pipeline-tree-line" d="M500 226 C540 226 540 150 590 150"></path>
+
+                  <g class="pipeline-tree-node" transform="translate(30 119)">
+                    <rect width="140" height="62"></rect>
+                    <text x="70" y="37">scRNA-seq data</text>
                   </g>
-                  <g class="pipeline-node" transform="translate(158 48)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">QC</text>
-                    <text x="36" y="44">annot.</text>
+                  <g class="pipeline-tree-node" transform="translate(260 46)">
+                    <rect width="240" height="56"></rect>
+                    <text x="120" y="34">Trajectory inference</text>
                   </g>
-                  <g class="pipeline-node" transform="translate(282 48)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">traj.</text>
-                    <text x="36" y="44">infer.</text>
+                  <g class="pipeline-tree-node" transform="translate(260 122)">
+                    <rect width="240" height="56"></rect>
+                    <text x="120" y="27">Gene regulatory network</text>
+                    <text x="120" y="43">inference</text>
                   </g>
-                  <g class="pipeline-node" transform="translate(406 48)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">dynamic</text>
-                    <text x="36" y="44">genes</text>
+                  <g class="pipeline-tree-node" transform="translate(260 198)">
+                    <rect width="240" height="56"></rect>
+                    <text x="120" y="27">CNV-aware</text>
+                    <text x="120" y="43">interpretation</text>
                   </g>
-                  <g class="pipeline-node" transform="translate(530 48)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">GRN</text>
-                    <text x="36" y="44">infer.</text>
-                  </g>
-                  <g class="pipeline-node" transform="translate(654 48)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">CNV</text>
-                    <text x="36" y="44">aware</text>
-                  </g>
-                  <g class="pipeline-node pipeline-node-final" transform="translate(34 148)">
-                    <circle cx="36" cy="32" r="32"></circle>
-                    <text x="36" y="28">driver</text>
-                    <text x="36" y="44">candidates</text>
+                  <g class="pipeline-tree-node pipeline-tree-final" transform="translate(590 119)">
+                    <rect width="140" height="62"></rect>
+                    <text x="70" y="28">Candidate</text>
+                    <text x="70" y="44">regulatory drivers</text>
                   </g>
                 </svg>
               </div>
@@ -320,11 +315,6 @@
                   Manuscript in preparation; computational candidates under experimental
                   validation.
                 </p>
-                <p class="pipeline-copy">
-                  Pipeline: scRNA-seq to QC and annotation to trajectory inference to
-                  dynamic gene expression to GRN inference to CNV-aware interpretation
-                  to candidate regulatory drivers.
-                </p>
                 <ul class="tag-list">
                   <li>Seurat</li>
                   <li>Monocle3</li>
@@ -336,7 +326,7 @@
                 </ul>
                 <a
                   class="text-link project-summary-link"
-                  href="#thyroid-project-summary"
+                  href="projects/thyroid-single-cell.html"
                   aria-label="Read thyroid project summary"
                 >
                   Read project summary
@@ -367,7 +357,7 @@
                 </ul>
                 <a
                   class="text-link"
-                  href="assets/poster/GBM_poster.pdf"
+                  href="assets/Glioblastoma_Poster.pdf"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Open glioblastoma poster PDF"
@@ -405,14 +395,11 @@
             </article>
 
             <article class="project-card">
-              <div class="algorithm-visual" aria-label="Static algorithmic RNA structure visual">
-                <code>RNA -> grammar -> structure</code>
-                <div class="rna-lines" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
+              <img
+                src="assets/images/rna-secondary-structure.png"
+                alt="Workflow diagram for RNA secondary structure prediction using context-free grammars, probabilistic grammars, parse trees, and CYK algorithm"
+                class="project-image project-image-contain"
+              />
               <div class="project-content">
                 <p class="project-kicker">Algorithmic biology</p>
                 <h3>RNA Secondary Structure Prediction</h3>
@@ -420,13 +407,26 @@
                   Algorithmic and computational foundations from Computer Science, using
                   stochastic context-free grammars and evolutionary modeling.
                 </p>
-                <p class="project-status">Implementation project; GitHub repository available.</p>
+                <p>
+                  I supervised a B.Sc. student on this implementation project, which
+                  reflects mentoring, teaching, and project guidance experience.
+                </p>
+                <p class="project-status">Implementation project.</p>
                 <ul class="tag-list">
                   <li>Python</li>
                   <li>Algorithms</li>
                   <li>RNA structure prediction</li>
                   <li>Evolutionary modeling</li>
                 </ul>
+                <a
+                  class="text-link"
+                  href="https://github.com/Mr-Ahmadi/RNA-Secondary-Structure-Prediction"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open RNA Secondary Structure Prediction GitHub repository"
+                >
+                  GitHub repository
+                </a>
               </div>
             </article>
           </div>
@@ -490,11 +490,6 @@
 
           <ol class="timeline-list">
             <li>
-              <time>2016-2020</time>
-              <h3>B.Sc. in Computer Science</h3>
-              <p>Alzahra University, Tehran, Iran.</p>
-            </li>
-            <li>
               <time>2020-2023</time>
               <h3>M.Sc. in Computer Science</h3>
               <p>Sharif University, Tehran, Iran.</p>
@@ -519,11 +514,6 @@
                 Lead bioinformatics analyses for dedifferentiation from normal thyroid
                 epithelial states to PTC and ATC.
               </p>
-            </li>
-            <li>
-              <time>2025-present</time>
-              <h3>Molecular dynamics collaboration</h3>
-              <p>Doxorubicin binding to DNA and Topoisomerase II.</p>
             </li>
           </ol>
         </div>
