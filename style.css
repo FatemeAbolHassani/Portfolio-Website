@@ -505,8 +505,42 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: -0.75rem 0 1.35rem;
+}
+
+.filter-button {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  color: var(--navy);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 0.55rem 0.85rem;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, opacity 180ms ease;
+}
+
+.filter-button:hover,
+.filter-button.is-active {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #ffffff;
+}
+
 .project-card {
   overflow: hidden;
+  transition: opacity 180ms ease;
+}
+
+.project-card.is-hidden {
+  display: none;
+  opacity: 0;
 }
 
 .project-card-featured {

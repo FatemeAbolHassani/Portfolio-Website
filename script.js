@@ -12,3 +12,32 @@ function toggleMenu() {
   button.classList.toggle("open", !isOpen);
   menu.hidden = isOpen;
 }
+
+function setupProjectFilters() {
+  const filterButtons = document.querySelectorAll(".filter-button");
+  const projectCards = document.querySelectorAll("#projects .project-card");
+
+  if (!filterButtons.length || !projectCards.length) {
+    return;
+  }
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const activeFilter = button.dataset.filter;
+
+      filterButtons.forEach((filterButton) => {
+        const isActive = filterButton === button;
+        filterButton.classList.toggle("is-active", isActive);
+        filterButton.setAttribute("aria-pressed", String(isActive));
+      });
+
+      projectCards.forEach((card) => {
+        const tags = (card.dataset.tags || "").split(/\s+/);
+        const shouldShow = activeFilter === "all" || tags.includes(activeFilter);
+        card.classList.toggle("is-hidden", !shouldShow);
+      });
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", setupProjectFilters);

@@ -249,8 +249,36 @@
             </p>
           </div>
 
+          <div class="project-filters" aria-label="Filter featured projects">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">
+              All
+            </button>
+            <button class="filter-button" type="button" data-filter="single-cell" aria-pressed="false">
+              Single-cell
+            </button>
+            <button class="filter-button" type="button" data-filter="grn" aria-pressed="false">
+              GRN
+            </button>
+            <button class="filter-button" type="button" data-filter="cnv" aria-pressed="false">
+              CNV
+            </button>
+            <button class="filter-button" type="button" data-filter="cancer" aria-pressed="false">
+              Cancer
+            </button>
+            <button class="filter-button" type="button" data-filter="molecular-modeling" aria-pressed="false">
+              Molecular modeling
+            </button>
+            <button class="filter-button" type="button" data-filter="algorithms" aria-pressed="false">
+              Algorithms
+            </button>
+          </div>
+
           <div class="project-grid">
-            <article class="project-card project-card-featured" id="thyroid-project">
+            <article
+              class="project-card project-card-featured"
+              id="thyroid-project"
+              data-tags="single-cell cancer grn cnv trajectory"
+            >
               <div class="pipeline-visual" aria-label="Thyroid cancer single-cell analysis tree">
                 <svg viewBox="0 0 760 300" role="img" aria-labelledby="thyroid-pipeline-title">
                   <title id="thyroid-pipeline-title">
@@ -334,7 +362,7 @@
               </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-tags="single-cell cancer pseudotime phylogenetics">
               <img
                 src="assets/images/gbm-pseudotime.jpg"
                 alt="Glioblastoma project visual showing pseudotime and phylogenetic analysis workflow"
@@ -369,7 +397,7 @@
               </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-tags="molecular-modeling md drug-dna">
               <img
                 src="assets/images/doxorubicin-dna.png"
                 alt="Molecular visualization of doxorubicin bound to DNA"
@@ -394,7 +422,7 @@
               </div>
             </article>
 
-            <article class="project-card">
+            <article class="project-card" data-tags="algorithms rna computational-biology">
               <img
                 src="assets/images/rna-secondary-structure.png"
                 alt="Workflow diagram for RNA secondary structure prediction using context-free grammars, probabilistic grammars, parse trees, and CYK algorithm"
